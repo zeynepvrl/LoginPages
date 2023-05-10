@@ -23,7 +23,7 @@ function GeneralForm() {
       password: "",
       passwordconfirm: "",                                                                  /*handleSubmit tetiklenince useFormik içirisindeki onSubmiti tetikleyecek bu fonksiyonun içeriği form tetiklendiğinde olacak olanları içerecek************** */
     },
-    validationSchema:basicSchema,          //fonsksiyonlar values lardan ayrı yazılır!
+    validationSchema:basicSchema,          //fonsksiyonlar values lardan ayrı yazılır! hj
     onSubmit,
   });
   console.log(values);
@@ -61,7 +61,7 @@ function GeneralForm() {
             id="password"
             onChange={handleChange}
             placeholder="Şifrenizi giriniz"
-            className={errors.password ? 'input-error' : ''}
+            className={errors.password ? 'input-error' : ''} 
           />
           {errors.password && <p className="error">{errors.password}</p>}
         </div>
